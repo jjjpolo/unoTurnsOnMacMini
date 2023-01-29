@@ -22,3 +22,7 @@ https://github.com/digistump/DigistumpArduino/releases/download/1.6.7/Digistump.
 * Servomotor animation at startup as a mean of calibration.
 * Logging on serial monitor (only available for Arduino UNO)
 * Different value setting for each type of board. 
+
+### V1.1
+* Attiny10 project (using Atmel Studio) has been added for including compatibility with this microcontroller.
+* Attiny10 firmware has limited capabilities.

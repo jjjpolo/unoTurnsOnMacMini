@@ -1,4 +1,4 @@
-//#define DEBUG // Enable this to disable normal job activities (see main func).
+#define DEBUG // Enable this to disable normal job activities (see main func).
 
 #if defined(__AVR_ATmega328__) || defined(__AVR_ATmega328P__)
 #define __Arduino_UNO
@@ -53,9 +53,9 @@ void bidirectionalServoMovement(int limitAngle, int steps)
   Serial.print("Bidirectional Servo Movement from 0 to ");
   Serial.println(limitAngle);
 #endif
-  servoMovement(0, limitAngle, steps);
+  servoMovement(10, limitAngle, steps);
   delay(buttonPressedDelay_ms);
-  servoMovement(limitAngle, 0, steps * -1);
+  servoMovement(limitAngle, 10, steps * -1);
 }
 
 void bootAnimation()
